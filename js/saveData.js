@@ -3,7 +3,7 @@ const dataUsers = localStorage.getItem("Users")
 const dataUsersObject = JSON.parse(dataUsers)
 var infoUsers = dataUsersObject==null ? []: dataUsersObject;
 
-
+//Validar usuario de especialista
 const validateUser = () => {
     console.log("Entramos a validar existencia")
     var existencia= false
@@ -15,6 +15,7 @@ const validateUser = () => {
     })
     return existencia
 }
+//Validar usuario de pacientes 
 const validatePaciente= () => {
     console.log("Entramos a validar existencia")
     var existencia= false
